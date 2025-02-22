@@ -2,7 +2,7 @@ const mysql = require("mysql2");
 
 // Create a connection pool
 const pool = mysql.createPool({
-  host: "mysql://root:QFbwFDxHRzTjInwUAEhiGhCHVxtmlsjU@switchback.proxy.rlwy.net:45727/railway", // Updated host
+  host: "mysql.railway.internal", // Updated host
   user: "root",
   password: "QFbwFDxHRzTjInwUAEhiGhCHVxtmlsjU", // Your Railway password
   database: "railway", // Confirm if still correct
