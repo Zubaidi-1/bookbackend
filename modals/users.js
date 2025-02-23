@@ -37,7 +37,7 @@ module.exports = class Users {
       );
       return { success: true, message: "User registered successfully" };
     } catch (e) {
-      throw new Error("Signup failed: " + e.message);
+      return { success: false, message: e.message };
     }
   }
 
