@@ -56,6 +56,7 @@ exports.signup = async (req, res, next) => {
       subject: "Your OTP Code",
       text: `Your OTP code is ${otp}. It will expire in 10 minutes.`,
     };
+    console.log(process.env.EMAIL_USER, "Sadsadsadsad");
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
