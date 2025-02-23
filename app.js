@@ -8,7 +8,12 @@ const path = require("path");
 const multer = require("multer");
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://zubaidi-1.github.io", //
+    methods: ["GET", "POST"], //
+  })
+);
 
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true })); // Parse form data
