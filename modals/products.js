@@ -24,6 +24,18 @@ module.exports = class Products {
   }
   async addProduct() {
     try {
+      console.log(
+        this.id,
+        this.name,
+        this.author,
+        this.genre,
+        this.price,
+        this.language,
+        this.phoneNumber,
+        this.email,
+        this.image
+      );
+
       await db.execute(
         "INSERT INTO products (idproducts,email,name,author,genre,language,price,phone,images ) VALUES (?,?,?,?,?,?,?,?, ?)",
         [
