@@ -48,6 +48,7 @@ exports.signup = async (req, res, next) => {
     };
 
     console.log(otpStorage, "sss");
+    console.log(process.env.EMAIL_USER, "Sadsadsadsad");
 
     // Send OTP via email
     const mailOptions = {
